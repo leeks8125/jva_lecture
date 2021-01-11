@@ -7,15 +7,16 @@ public class HeatExam {
 			Heater heat = new Heater();
 			int a= 0;	
 			while(a==0) {
-				heat.run();
+				heat.display();
 				heat.up();
 				heat.maxup();
 				heat.down();
 				heat.mindown2();
-				heat.mindown();
-				heat.pw();
+				//heat.mindown();
+				heat.pwoff();
+				heat.pwon();
 				heat.err();
-
+				//heat.ac(1);
 			}	
 	}
 }

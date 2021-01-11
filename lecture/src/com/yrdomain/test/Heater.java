@@ -25,7 +25,7 @@ public class Heater {
 
 	
 
-	public void run() {
+	public void display() {
 		brand = "Rinnai";		
 		if(power == true) {
 			System.out.println("브랜드:"+brand);
@@ -80,15 +80,9 @@ public class Heater {
 
 	}
 
-	
-
-	
-
-	
-
 	public int chekmindown1(int input) {
 		int result = 0;
-		if(input == 1) {
+		if(input == -30) {
 			result = 1;
 		} else {
 			result = 0;
@@ -102,37 +96,37 @@ public class Heater {
 //		return temp;
 	}
 
-	
-
 	public void ac(String str) {
 		System.out.println(str);
 	}
 
-	public void ac(int b) {
-		if(b == 1) {
-		System.out.println(b);
+	public void ac(int x) {
+		if(x == 1) {
+		System.out.println(x);
 		} else {
 			System.out.println();
 		}
 	}
 
+	int x = chekmindown1(10);//0
 	
-
-	int x = chekmindown1(10);
-	public int pw() {
+	public boolean pwoff() {
 		if((power==true)&&(wtemp==1)) {
 			System.out.println("전원을 끕니다");
 			System.out.println();
 			power = false;
-		}else if((power==false)&&(wtemp==1)) {
+			
+		}
+		return power;
+	}
+	
+	public boolean pwon() {
+		if((power==false)&&(wtemp==1)) {
 			System.out.println("전원을 켭니다");
 			System.out.println();
 			power=true;
-		}else {
-					//
 		}
-		return temp;
-
+		return power;
 	}
 
 	public int err() {
