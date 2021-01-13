@@ -3,19 +3,25 @@ package com.yrdomain.test;
 public class Board {
 	String name;
 	int like;
+	int time;
 	String share;
 	String comment;
 	String more;
 	
-	public Board(String name,int like,String share,String comment,String more) {
+	public Board(String name,int like,String share,String comment,String more,int time) {
 		this.name = name;
 		this.like = like;
 		this.share = share;
 		this.comment = comment;
 		this.more = more;	
+		this.time = time;
+		
 	}
-	
-	//올린사람 게시물
+	//올린 시간
+	public void cktime() {
+		System.out.println();
+	}
+	//올린사람 
 	public void ckname() {
 		System.out.println();
 	}
