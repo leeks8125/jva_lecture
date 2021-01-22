@@ -1,4 +1,5 @@
 package com.yrdomain.ch11;
+//p469
 import java.util.*;
 public class Member2 implements Cloneable {
 	public String name;
